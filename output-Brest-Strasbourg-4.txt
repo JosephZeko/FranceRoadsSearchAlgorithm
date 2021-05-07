@@ -1,0 +1,384 @@
+Staring BFS
+
+Expanding Brest
+Children are (Rennes)
+New children are (Rennes)
+Open list is (Rennes)
+Closed list is (Brest)
+
+
+Expanding Rennes
+Children are (Brest Caen Nantes Paris)
+New children are (Caen Nantes Paris)
+Open list is (Caen Nantes Paris)
+Closed list is (Brest Rennes)
+
+
+Expanding Caen
+Children are (Calais Paris Rennes)
+New children are (Calais Paris)
+Open list is (Nantes Paris Calais)
+Closed list is (Brest Rennes Caen)
+
+
+Expanding Nantes
+Children are (Bordeaux Limoges Rennes)
+New children are (Bordeaux Limoges)
+Open list is (Paris Calais Bordeaux Limoges)
+Closed list is (Brest Rennes Caen Nantes)
+
+
+Expanding Paris
+Children are (Caen Calais Dijon Limoges Nancy Rennes)
+New children are (Calais Dijon Limoges Nancy)
+Open list is (Calais Bordeaux Limoges Dijon Nancy)
+Closed list is (Brest Rennes Caen Nantes Paris)
+
+
+Expanding Calais
+Children are (Caen Nancy Paris)
+New children are (Nancy)
+Open list is (Bordeaux Limoges Dijon Nancy)
+Closed list is (Brest Rennes Caen Nantes Paris Calais)
+
+
+Expanding Bordeaux
+Children are (Limoges Nantes Toulouse)
+New children are (Limoges Toulouse)
+Open list is (Limoges Dijon Nancy Toulouse)
+Closed list is (Brest Rennes Caen Nantes Paris Calais Bordeaux)
+
+
+Expanding Limoges
+Children are (Bordeaux Lyon Nantes Paris Toulouse)
+New children are (Lyon Toulouse)
+Open list is (Dijon Nancy Toulouse Lyon)
+Closed list is (Brest Rennes Caen Nantes Paris Calais Bordeaux Limoges)
+
+
+Expanding Dijon
+Children are (Lyon Nancy Paris Strasbourg)
+New children are (Lyon Nancy Strasbourg)
+Open list is (Nancy Toulouse Lyon Strasbourg)
+Closed list is (Brest Rennes Caen Nantes Paris Calais Bordeaux Limoges Dijon)
+
+
+Expanding Nancy
+Children are (Calais Dijon Paris Strasbourg)
+New children are (Strasbourg)
+Open list is (Toulouse Lyon Strasbourg)
+Closed list is (Brest Rennes Caen Nantes Paris Calais Bordeaux Limoges Dijon Nancy)
+
+
+Expanding Toulouse
+Children are (Bordeaux Limoges Montpellier)
+New children are (Montpellier)
+Open list is (Lyon Strasbourg Montpellier)
+Closed list is (Brest Rennes Caen Nantes Paris Calais Bordeaux Limoges Dijon Nancy Toulouse)
+
+
+Expanding Lyon
+Children are (Avignon Dijon Grenoble Limoges)
+New children are (Avignon Grenoble)
+Open list is (Strasbourg Montpellier Avignon Grenoble)
+Closed list is (Brest Rennes Caen Nantes Paris Calais Bordeaux Limoges Dijon Nancy Toulouse Lyon)
+
+
+Expanding Strasbourg
+
+
+
+Breadth-first search solution:(Brest Rennes Paris Dijon Strasbourg)
+12 nodes expanded
+
+
+Staring DFS
+
+Expanding Brest
+Children are (Rennes)
+New children are (Rennes)
+Open list is(Rennes)
+Closed list is (Brest)
+
+Expanding Rennes
+Children are (Brest Caen Nantes Paris)
+New children are (Brest Caen Nantes Paris)
+Open list is(Caen Nantes Paris)
+Closed list is (Brest Rennes)
+
+Expanding Caen
+Children are (Calais Paris Rennes)
+New children are (Calais Paris Rennes)
+Open list is(Calais Nantes Paris)
+Closed list is (Brest Rennes Caen)
+
+Expanding Calais
+Children are (Caen Nancy Paris)
+New children are (Caen Nancy Paris)
+Open list is(Nancy Nantes Paris)
+Closed list is (Brest Rennes Caen Calais)
+
+Expanding Nancy
+Children are (Calais Dijon Paris Strasbourg)
+New children are (Calais Dijon Paris Strasbourg)
+Open list is(Dijon Strasbourg Nantes Paris)
+Closed list is (Brest Rennes Caen Calais Nancy)
+
+Expanding Dijon
+Children are (Lyon Nancy Paris Strasbourg)
+New children are (Lyon Nancy Paris Strasbourg)
+Open list is(Lyon Strasbourg Nantes Paris)
+Closed list is (Brest Rennes Caen Calais Nancy Dijon)
+
+Expanding Lyon
+Children are (Avignon Dijon Grenoble Limoges)
+New children are (Avignon Dijon Grenoble Limoges)
+Open list is(Avignon Grenoble Limoges Strasbourg Nantes Paris)
+Closed list is (Brest Rennes Caen Calais Nancy Dijon Lyon)
+
+Expanding Avignon
+Children are (Grenoble Lyon Marseille Montpellier)
+New children are (Grenoble Lyon Marseille Montpellier)
+Open list is(Marseille Montpellier Grenoble Limoges Strasbourg Nantes Paris)
+Closed list is (Brest Rennes Caen Calais Nancy Dijon Lyon Avignon)
+
+Expanding Marseille
+Children are (Avignon Nice)
+New children are (Avignon Nice)
+Open list is(Nice Montpellier Grenoble Limoges Strasbourg Nantes Paris)
+Closed list is (Brest Rennes Caen Calais Nancy Dijon Lyon Avignon Marseille)
+
+Expanding Nice
+Children are (Marseille)
+New children are (Marseille)
+Open list is(Montpellier Grenoble Limoges Strasbourg Nantes Paris)
+Closed list is (Brest Rennes Caen Calais Nancy Dijon Lyon Avignon Marseille Nice)
+
+Expanding Montpellier
+Children are (Avignon Toulouse)
+New children are (Avignon Toulouse)
+Open list is(Toulouse Grenoble Limoges Strasbourg Nantes Paris)
+Closed list is (Brest Rennes Caen Calais Nancy Dijon Lyon Avignon Marseille Nice Montpellier)
+
+Expanding Toulouse
+Children are (Bordeaux Limoges Montpellier)
+New children are (Bordeaux Limoges Montpellier)
+Open list is(Bordeaux Grenoble Limoges Strasbourg Nantes Paris)
+Closed list is (Brest Rennes Caen Calais Nancy Dijon Lyon Avignon Marseille Nice Montpellier Toulouse)
+
+Expanding Bordeaux
+Children are (Limoges Nantes Toulouse)
+New children are (Limoges Nantes Toulouse)
+Open list is(Grenoble Limoges Strasbourg Nantes Paris)
+Closed list is (Brest Rennes Caen Calais Nancy Dijon Lyon Avignon Marseille Nice Montpellier Toulouse Bordeaux)
+
+Expanding Grenoble
+Children are (Avignon Lyon)
+New children are (Avignon Lyon)
+Open list is(Limoges Strasbourg Nantes Paris)
+Closed list is (Brest Rennes Caen Calais Nancy Dijon Lyon Avignon Marseille Nice Montpellier Toulouse Bordeaux Grenoble)
+
+Expanding Limoges
+Children are (Bordeaux Lyon Nantes Paris Toulouse)
+New children are (Bordeaux Lyon Nantes Paris Toulouse)
+Open list is(Strasbourg Nantes Paris)
+Closed list is (Brest Rennes Caen Calais Nancy Dijon Lyon Avignon Marseille Nice Montpellier Toulouse Bordeaux Grenoble Limoges)
+
+Expanding Strasbourg
+
+
+
+Depth-first search solution:(Brest Rennes Caen Calais Nancy Strasbourg)
+15 nodes expanded
+
+
+Staring DFID
+
+
+DFID LEVEL 0:
+
+Expanding Brest
+Depth has been reached
+Open list is()
+Closed list is ((Brest 0) )
+
+
+DFID LEVEL 1:
+
+Expanding Brest
+Children are ((Rennes 1) )
+New children are ((Rennes 1) )
+Open list is((Rennes 1) )
+Closed list is ((Brest 0) )
+
+Expanding Rennes
+Depth has been reached
+Open list is()
+Closed list is ((Brest 0) (Rennes 1) )
+
+
+DFID LEVEL 2:
+
+Expanding Brest
+Children are ((Rennes 1) )
+New children are ((Rennes 1) )
+Open list is((Rennes 1) )
+Closed list is ((Brest 0) )
+
+Expanding Rennes
+Children are ((Brest 2) (Caen 2) (Nantes 2) (Paris 2) )
+New children are ((Brest 2) (Caen 2) (Nantes 2) (Paris 2) )
+Open list is((Caen 2) (Nantes 2) (Paris 2) )
+Closed list is ((Brest 0) (Rennes 1) )
+
+Expanding Caen
+Depth has been reached
+Open list is((Nantes 2) (Paris 2) )
+Closed list is ((Brest 0) (Rennes 1) (Caen 2) )
+
+Expanding Nantes
+Depth has been reached
+Open list is((Paris 2) )
+Closed list is ((Brest 0) (Rennes 1) (Caen 2) (Nantes 2) )
+
+Expanding Paris
+Depth has been reached
+Open list is()
+Closed list is ((Brest 0) (Rennes 1) (Caen 2) (Nantes 2) (Paris 2) )
+
+
+DFID LEVEL 3:
+
+Expanding Brest
+Children are ((Rennes 1) )
+New children are ((Rennes 1) )
+Open list is((Rennes 1) )
+Closed list is ((Brest 0) )
+
+Expanding Rennes
+Children are ((Brest 2) (Caen 2) (Nantes 2) (Paris 2) )
+New children are ((Brest 2) (Caen 2) (Nantes 2) (Paris 2) )
+Open list is((Caen 2) (Nantes 2) (Paris 2) )
+Closed list is ((Brest 0) (Rennes 1) )
+
+Expanding Caen
+Children are ((Calais 3) (Paris 3) (Rennes 3) )
+New children are ((Calais 3) (Paris 3) (Rennes 3) )
+Open list is((Calais 3) (Nantes 2) (Paris 2) )
+Closed list is ((Brest 0) (Rennes 1) (Caen 2) )
+
+Expanding Calais
+Depth has been reached
+Open list is((Nantes 2) (Paris 2) )
+Closed list is ((Brest 0) (Rennes 1) (Caen 2) (Calais 3) )
+
+Expanding Nantes
+Children are ((Bordeaux 3) (Limoges 3) (Rennes 3) )
+New children are ((Bordeaux 3) (Limoges 3) (Rennes 3) )
+Open list is((Bordeaux 3) (Limoges 3) (Paris 2) )
+Closed list is ((Brest 0) (Rennes 1) (Caen 2) (Calais 3) (Nantes 2) )
+
+Expanding Bordeaux
+Depth has been reached
+Open list is((Limoges 3) (Paris 2) )
+Closed list is ((Brest 0) (Rennes 1) (Caen 2) (Calais 3) (Nantes 2) (Bordeaux 3) )
+
+Expanding Limoges
+Depth has been reached
+Open list is((Paris 2) )
+Closed list is ((Brest 0) (Rennes 1) (Caen 2) (Calais 3) (Nantes 2) (Bordeaux 3) (Limoges 3) )
+
+Expanding Paris
+Children are ((Caen 3) (Calais 3) (Dijon 3) (Limoges 3) (Nancy 3) (Rennes 3) )
+New children are ((Caen 3) (Calais 3) (Dijon 3) (Limoges 3) (Nancy 3) (Rennes 3) )
+Open list is((Dijon 3) (Nancy 3) )
+Closed list is ((Brest 0) (Rennes 1) (Caen 2) (Calais 3) (Nantes 2) (Bordeaux 3) (Limoges 3) (Paris 2) )
+
+Expanding Dijon
+Depth has been reached
+Open list is((Nancy 3) )
+Closed list is ((Brest 0) (Rennes 1) (Caen 2) (Calais 3) (Nantes 2) (Bordeaux 3) (Limoges 3) (Paris 2) (Dijon 3) )
+
+Expanding Nancy
+Depth has been reached
+Open list is()
+Closed list is ((Brest 0) (Rennes 1) (Caen 2) (Calais 3) (Nantes 2) (Bordeaux 3) (Limoges 3) (Paris 2) (Dijon 3) (Nancy 3) )
+
+
+DFID LEVEL 4:
+
+Expanding Brest
+Children are ((Rennes 1) )
+New children are ((Rennes 1) )
+Open list is((Rennes 1) )
+Closed list is ((Brest 0) )
+
+Expanding Rennes
+Children are ((Brest 2) (Caen 2) (Nantes 2) (Paris 2) )
+New children are ((Brest 2) (Caen 2) (Nantes 2) (Paris 2) )
+Open list is((Caen 2) (Nantes 2) (Paris 2) )
+Closed list is ((Brest 0) (Rennes 1) )
+
+Expanding Caen
+Children are ((Calais 3) (Paris 3) (Rennes 3) )
+New children are ((Calais 3) (Paris 3) (Rennes 3) )
+Open list is((Calais 3) (Nantes 2) (Paris 2) )
+Closed list is ((Brest 0) (Rennes 1) (Caen 2) )
+
+Expanding Calais
+Children are ((Caen 4) (Nancy 4) (Paris 4) )
+New children are ((Caen 4) (Nancy 4) (Paris 4) )
+Open list is((Nancy 4) (Nantes 2) (Paris 2) )
+Closed list is ((Brest 0) (Rennes 1) (Caen 2) (Calais 3) )
+
+Expanding Nancy
+Depth has been reached
+Open list is((Nantes 2) (Paris 2) )
+Closed list is ((Brest 0) (Rennes 1) (Caen 2) (Calais 3) (Nancy 4) )
+
+Expanding Nantes
+Children are ((Bordeaux 3) (Limoges 3) (Rennes 3) )
+New children are ((Bordeaux 3) (Limoges 3) (Rennes 3) )
+Open list is((Bordeaux 3) (Limoges 3) (Paris 2) )
+Closed list is ((Brest 0) (Rennes 1) (Caen 2) (Calais 3) (Nancy 4) (Nantes 2) )
+
+Expanding Bordeaux
+Children are ((Limoges 4) (Nantes 4) (Toulouse 4) )
+New children are ((Limoges 4) (Nantes 4) (Toulouse 4) )
+Open list is((Toulouse 4) (Limoges 3) (Paris 2) )
+Closed list is ((Brest 0) (Rennes 1) (Caen 2) (Calais 3) (Nancy 4) (Nantes 2) (Bordeaux 3) )
+
+Expanding Toulouse
+Depth has been reached
+Open list is((Limoges 3) (Paris 2) )
+Closed list is ((Brest 0) (Rennes 1) (Caen 2) (Calais 3) (Nancy 4) (Nantes 2) (Bordeaux 3) (Toulouse 4) )
+
+Expanding Limoges
+Children are ((Bordeaux 4) (Lyon 4) (Nantes 4) (Paris 4) (Toulouse 4) )
+New children are ((Bordeaux 4) (Lyon 4) (Nantes 4) (Paris 4) (Toulouse 4) )
+Open list is((Lyon 4) (Paris 2) )
+Closed list is ((Brest 0) (Rennes 1) (Caen 2) (Calais 3) (Nancy 4) (Nantes 2) (Bordeaux 3) (Toulouse 4) (Limoges 3) )
+
+Expanding Lyon
+Depth has been reached
+Open list is((Paris 2) )
+Closed list is ((Brest 0) (Rennes 1) (Caen 2) (Calais 3) (Nancy 4) (Nantes 2) (Bordeaux 3) (Toulouse 4) (Limoges 3) (Lyon 4) )
+
+Expanding Paris
+Children are ((Caen 3) (Calais 3) (Dijon 3) (Limoges 3) (Nancy 3) (Rennes 3) )
+* Dropping Nancy 4 becuase value is better
+New children are ((Caen 3) (Calais 3) (Dijon 3) (Limoges 3) (Nancy 3) (Rennes 3) )
+Open list is((Dijon 3) (Nancy 3) )
+Closed list is ((Brest 0) (Rennes 1) (Caen 2) (Calais 3) (Nantes 2) (Bordeaux 3) (Toulouse 4) (Limoges 3) (Lyon 4) (Paris 2) )
+
+Expanding Dijon
+Children are ((Lyon 4) (Nancy 4) (Paris 4) (Strasbourg 4) )
+New children are ((Lyon 4) (Nancy 4) (Paris 4) (Strasbourg 4) )
+Open list is((Strasbourg 4) (Nancy 3) )
+Closed list is ((Brest 0) (Rennes 1) (Caen 2) (Calais 3) (Nantes 2) (Bordeaux 3) (Toulouse 4) (Limoges 3) (Lyon 4) (Paris 2) (Dijon 3) )
+
+Expanding Strasbourg
+
+
+
+DFID solution:(Brest Rennes Paris Dijon Strasbourg)
