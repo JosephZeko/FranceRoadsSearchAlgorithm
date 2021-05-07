@@ -221,7 +221,7 @@ def dfs(from_city, to_city, france_roads, isDFID, maxDepth):
 def dfid(from_city, to_city, france_roads, maxDepth):
     counter = 0                #counter for depth
     found_target = False
-    while maxDepth >= counter:  #while maxDepth is greater then counter
+    while int(maxDepth) >= counter:  #while maxDepth is greater then counter
         print("\nDFID LEVEL " + str(counter) + ":\n")      #print the level
         found_target = dfs(from_city,to_city, france_roads,True,counter) #call  the dfs fucntion
         if found_target:       #if dfs found the target break out of loop
